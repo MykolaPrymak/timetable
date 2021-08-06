@@ -1,4 +1,4 @@
-type DayOfWeek = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
+export type DayOfWeek = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
 
 export const DailyTimeTableTypeOpen = 'open';
 export const DailyTimeTableTypeClose = 'close';
