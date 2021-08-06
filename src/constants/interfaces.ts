@@ -1,8 +1,11 @@
 type DayOfWeek = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
 
-type DailyTimeTableType = 'open' | 'close';
+export const DailyTimeTableTypeOpen = 'open';
+export const DailyTimeTableTypeClose = 'close';
 
-interface DailyTimeTable {
+export type DailyTimeTableType = typeof DailyTimeTableTypeOpen | typeof DailyTimeTableTypeClose;
+
+export interface DailyTimeTable {
   type: DailyTimeTableType;
   value: number;
 }
