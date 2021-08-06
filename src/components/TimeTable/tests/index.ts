@@ -1,11 +1,27 @@
 import { TimeTable } from '../../../constants/interfaces';
 
-const inputs: TimeTable[] = [
+export const inputs: TimeTable[] = [
   // Open just one day in the week
   {
     monday: [
       { type: 'open', value: 32400 },
       { type: 'close', value: 72000 },
+    ],
+  },
+
+  // Opens only one day and closed on next
+  {
+    monday: [
+      {
+        type: 'close',
+        value: 3600,
+      },
+    ],
+    sunday: [
+      {
+        type: 'open',
+        value: 64800,
+      },
     ],
   },
 
@@ -40,6 +56,7 @@ const inputs: TimeTable[] = [
       },
     ],
   },
+
   // Full data formatting example
   {
     monday: [],

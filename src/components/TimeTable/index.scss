@@ -5,16 +5,25 @@
   font-weight: normal;
   text-align: left;
   background-color: $white-color;
+  border: 1px solid $grey-2-color;
+  border-radius: 10px;
+  box-shadow: 0 0 5px $grey-2-color;
+  padding: 2em;
 
   position: absolute;
   top: 100px;
   left: 100px;
   
-  width: 400px;
-  height: 600px;
+  min-width: 350px;
+  min-height: 290px;
 }
 
 .TimeTable-header {
+  border-bottom: 2px solid $black-color;
+  margin: 0 0 1em;
+  padding-bottom: .5em;
+  color: $black-color;
+  font-size: 26px;
   /*
   background-color: #282c34;
   min-height: 100vh;
@@ -25,8 +34,37 @@
   font-size: calc(10px + 2vmin);
   color: white;
   */
+  .TimeTable-icon {
+    margin-right: .5em;
+  }
+}
+.TimeTable-icon {
+  vertical-align: sub;
+  color: $grey-3-color;
 }
 
 .TimeTable-label {
-  color: #61dafb;
+  color: $green-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 70%;
+  margin-left: 1em;
 }
+.TimeTable-weekday {
+  height: 2em;
+  &-name {
+    display: inline-block;
+    width: 50%;
+  }
+  &-workingHours {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+
+    &--none {
+      color: $grey-3-color;
+    }
+  }
+}
+
+// Small screen rules
