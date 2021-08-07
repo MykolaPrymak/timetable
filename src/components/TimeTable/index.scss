@@ -11,13 +11,8 @@
   padding: 2em;
   box-sizing: border-box;
   min-width: 340px;
-  max-width: 800px;
+  max-width: 640px;
   //min-height: 290px;
-
-  // For DEV purpose only
-  position: absolute;
-  top: 50px;
-  left: 50px;
 }
 
 .TimeTable-header {
@@ -27,16 +22,7 @@
   color: $black-color;
   font-size: 24px;
   line-height: 30px;
-  /*
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  */
+
   .TimeTable-icon {
     margin-right: .5em;
   }
