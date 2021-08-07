@@ -55,14 +55,14 @@ const TimeTableItem = (props: { weekDay: WeekDayItem; timetable: TimeTableType; 
     if (cursor === -1) {
       break;
     }
-    const openTime = dayTimeTable[cursor].value;
 
-    let closeTime = 0; // If we won't find the close time
-    // we assume that the store will close at 12 AM
+    const openTime = dayTimeTable[cursor].value;
+    let closeTime = 0; // If we won't find the close time we assume that the store will close at 12 AM
+
     cursor = getCloseTimeIdx(dayTimeTable, cursor);
 
-    // We have close time in this day
     if (cursor !== -1) {
+      // We have close time in this day
       closeTime = dayTimeTable[cursor].value;
     } else {
       // Try to find close time in next day
@@ -78,7 +78,7 @@ const TimeTableItem = (props: { weekDay: WeekDayItem; timetable: TimeTableType; 
     // Save our pair
     openHours.push([openTime, closeTime]);
 
-    // Continue until we have results
+    // Continue until we have close results
   } while (cursor !== -1);
 
   return (

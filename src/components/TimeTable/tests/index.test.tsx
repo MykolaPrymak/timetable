@@ -138,7 +138,7 @@ describe('<TimeTable />', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
-  
+
   it('renders properly if we have full week of time slots', () => {
     const { container } = render(<TimeTable timetable={fullWeekTimeTable} />);
 
