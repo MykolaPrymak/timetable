@@ -188,40 +188,42 @@ describe('getOpenTimeIdx/getCloseTimeIdx', () => {
   });
 
   it('should return expected value', () => {
-    const testCases = [
-      // [type, startIdx, expected value]
-
-      ['open', 0, 0],
-      ['open', 1, 1],
-      ['open', 2, 2],
-      ['open', 3, 3],
-      ['open', 4, 6],
-      ['open', 5, 6],
-      ['open', 6, 6],
-      ['open', 7, -1],
-
-      ['close', 0, 4],
-      ['close', 1, 4],
-      ['close', 3, 4],
-      ['close', 4, 4],
-      ['close', 5, 5],
-      ['close', 6, -1],
-      ['close', 7, -1],
-
+    // [startIdx, expected value]
+    const openTestCases = [
+      [0, 0],
+      [1, 1],
+      [2, 2],
+      [3, 3],
+      [4, 6],
+      [5, 6],
+      [6, 6],
+      [7, -1],
       // Negative index are ignored
-      ['open', -1, 0],
-      ['open', -10, 0],
-      ['close', -1, 4],
-      ['close', -15, 4],
+      [-1, 0],
+      [-10, 0],
+    ];
+  const closeTestCases = [
+      [0, 4],
+      [1, 4],
+      [3, 4],
+      [4, 4],
+      [5, 5],
+      [6, -1],
+      [7, -1],
+      [-1, 4],
+      [-15, 4],
     ];
 
-    testCases.forEach(testCase => {
-      const [type, startIdx, expectedIdx] = testCase;
-      if (type === 'open') {
-        expect(getOpenTimeIdx(timeTable, startIdx as number)).toBe(expectedIdx);
-      } else {
-        expect(getCloseTimeIdx(timeTable, startIdx as number)).toBe(expectedIdx);
-      }
+    openTestCases.forEach(testCase => {
+      const [startIdx, expectedIdx] = testCase;
+
+      expect(getOpenTimeIdx(timeTable, startIdx as number)).toBe(expectedIdx);
+    });
+
+    closeTestCases.forEach(testCase => {
+      const [startIdx, expectedIdx] = testCase;
+
+      expect(getCloseTimeIdx(timeTable, startIdx as number)).toBe(expectedIdx);
     });
   });
 });

@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier 'src/**/*.{ts,tsx,js}' -l",
     "prettier:fix": "prettier 'src/**/*.{ts,tsx,js}' -w"
   },
@@ -28,6 +29,12 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run prettier && npm test",
+      "pre-push": "npm run lint && npm run prettier && npm test"
+    }
   },
   "browserslist": {
     "production": [
@@ -42,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "husky": "^7.0.1",
     "prettier": "^2.3.2"
   }
 }

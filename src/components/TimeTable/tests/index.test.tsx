@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import { TimeTable as TimeTableType } from '../../../constants/interfaces';
 import TimeTable from '../index';
