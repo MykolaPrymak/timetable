@@ -9,6 +9,43 @@ import TimeTable from './components/TimeTable';
     font-family: 'Roboto', sans-serif;
 */
 
+const timetable = {
+  monday: [
+  
+  { type: 'open', value: 3600 },
+  { type: 'close', value: 7200 },
+  { type: 'open', value: 36000 },
+  { type: 'close', value: 39800 },
+  { type: 'open', value: 43200 },
+  { type: 'close', value: 75600 },
+  
+],
+  tuesday: [
+    { type: 'open', value: 36000 },
+    { type: 'close', value: 64800 },
+  ],
+  wednesday: [
+    
+    { type: 'open', value: 37800 },
+    { type: 'close', value: 41400 },
+    
+  ],
+  thursday: [
+    { type: 'open', value: 36000 },
+    { type: 'close', value: 64800 },
+  ],
+  friday: [{ type: 'open', value: 36000 }],
+  saturday: [
+    { type: 'close', value: 3600 },
+    { type: 'open', value: 36000 },
+  ],
+  sunday: [
+    { type: 'close', value: 3600 },
+    { type: 'open', value: 43200 },
+    { type: 'close', value: 75600 },
+  ],
+};
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +58,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <TimeTable />
+      <TimeTable timetable={timetable} />
     </div>
   );
 }

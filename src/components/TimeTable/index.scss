@@ -9,21 +9,24 @@
   border-radius: 10px;
   box-shadow: 0 0 5px $grey-2-color;
   padding: 2em;
+  box-sizing: border-box;
+  min-width: 340px;
+  max-width: 800px;
+  //min-height: 290px;
 
+  // For DEV purpose only
   position: absolute;
-  top: 100px;
-  left: 100px;
-  
-  min-width: 350px;
-  min-height: 290px;
+  top: 50px;
+  left: 50px;
 }
 
 .TimeTable-header {
   border-bottom: 2px solid $black-color;
-  margin: 0 0 1em;
+  margin: 0 0 .5em;
   padding-bottom: .5em;
   color: $black-color;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 30px;
   /*
   background-color: #282c34;
   min-height: 100vh;
@@ -38,6 +41,7 @@
     margin-right: .5em;
   }
 }
+
 .TimeTable-icon {
   vertical-align: sub;
   color: $grey-3-color;
@@ -47,19 +51,27 @@
   color: $green-color;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 70%;
+  font-size: 12px;
   margin-left: 1em;
 }
+
 .TimeTable-weekday {
-  height: 2em;
+  min-height: 2.5em;
+  font-size: 16px;
+  line-height: 2.5em;
+  border-bottom: 2px solid $grey-2-color;
+  
   &-name {
     display: inline-block;
-    width: 50%;
+    width: 10rem;
+    font-weight: bold;
+    vertical-align: top;
   }
   &-workingHours {
     display: inline-block;
-    width: 50%;
+    width: calc(100% - 10rem);
     text-align: right;
+    line-height: 1em;
 
     &--none {
       color: $grey-3-color;
@@ -67,4 +79,42 @@
   }
 }
 
+.TimeTable-timeSlot {
+  span {
+    white-space: nowrap;
+  }
+  &::after {
+    content: ', ';
+  }
+  &:last-child::after {
+    content: '';
+  }
+}
+
 // Small screen rules
+@media only screen and (max-width: 600px) {
+  .TimeTable {
+    padding: 1em;
+    padding-bottom: 1.5em;
+    min-width: 300px;
+  }
+
+  .TimeTable-header {
+    font-size: 18px;
+    line-height: 16px;
+
+    .TimeTable-icon {
+      width: .8em;
+      height: .8em;
+      margin-right: .2em;
+    }
+  }
+
+  .TimeTable-label {
+    margin-left: .5em;
+  }
+
+  .TimeTable-weekday {
+    font-size: 14px;
+  }
+}
