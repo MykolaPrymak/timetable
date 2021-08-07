@@ -1,0 +1,1058 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TimeTable /> renders default all closed timetable if nothing is passed 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TimeTable /> renders one open day in the week 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            9 AM
+          </span>
+           - 
+          <span>
+            8 PM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TimeTable /> renders properly if close time is on next day 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            6 PM
+          </span>
+           - 
+          <span>
+            1 AM
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TimeTable /> renders properly if close time is on next day and we have time slots on next day 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            6 PM
+          </span>
+           - 
+          <span>
+            1 AM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            9 AM
+          </span>
+           - 
+          <span>
+            11 AM
+          </span>
+        </span>
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            4 PM
+          </span>
+           - 
+          <span>
+            11 PM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TimeTable /> renders properly if we have couple of time slots in one day 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            1 AM
+          </span>
+           - 
+          <span>
+            2 AM
+          </span>
+        </span>
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            10 AM
+          </span>
+           - 
+          <span>
+            11:03:20 AM
+          </span>
+        </span>
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            12 PM
+          </span>
+           - 
+          <span>
+            9 PM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TimeTable /> renders properly if we have full week of time slots 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            10 AM
+          </span>
+           - 
+          <span>
+            6 PM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            10 AM
+          </span>
+           - 
+          <span>
+            6 PM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            10 AM
+          </span>
+           - 
+          <span>
+            1 AM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            10 AM
+          </span>
+           - 
+          <span>
+            1 AM
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours"
+      >
+        <span
+          class="TimeTable-timeSlot"
+        >
+          <span>
+            12 PM
+          </span>
+           - 
+          <span>
+            9 PM
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<TimeTable /> renders today label at Sunday 1`] = `
+<div
+  class="TimeTable"
+>
+  <h4
+    class="TimeTable-header"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root TimeTable-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+      />
+      <path
+        d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+      />
+    </svg>
+    Opening hours
+  </h4>
+  <div
+    class="TimeTable-weekdays"
+  >
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Monday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Tuesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Wednesday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Thursday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Friday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Saturday
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+    <div
+      class="TimeTable-weekday"
+    >
+      <div
+        class="TimeTable-weekday-name"
+      >
+        Sunday
+        <label
+          class="TimeTable-label"
+        >
+          Today
+        </label>
+      </div>
+      <div
+        class="TimeTable-weekday-workingHours TimeTable-weekday-workingHours--none"
+      >
+        Closed
+      </div>
+    </div>
+  </div>
+</div>
+`;
